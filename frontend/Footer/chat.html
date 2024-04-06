@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        !function(w, d, s, ...args){
+          var div = d.createElement('div');
+          div.id = 'aichatbot';
+          d.body.appendChild(div);
+          w.chatbotConfig = args;
+        
+          var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s);
+          j.defer = true;
+          j.type = 'module';
+          j.src = 'https://aichatbot.sendbird.com/index.js';
+          f.parentNode.insertBefore(j, f);
+        }(window, document, 'script', '6E19D3E4-0B66-4B61-A264-0E9D6E73729A', 'onboarding_bot');
+        </script>
+</body>
+</html>
