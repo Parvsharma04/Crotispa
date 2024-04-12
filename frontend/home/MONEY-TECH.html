@@ -56,7 +56,7 @@
            color: var(--accent-color);
        }
 
-       button {
+       button, .join-us-btn {
            background-color: var(--accent-color);
            color: var(--background-color);
            border: none;
@@ -185,6 +185,31 @@
                 grid-template-columns: repeat(1, 1fr);
         }
 }
+.button-group {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        margin: 4rem auto 2rem auto;
+        align-items: center;
+        justify-content: center;
+}
+
+.signup-button {
+        border: none;
+        border-radius: 0.375rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        transform: all 0.1s;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+}
+
+.signup-button:hover {
+        background-color: #5254f8;
+}
+
    </style>
 </head>
 <body>
@@ -318,6 +343,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="button-group">
+      <a href="jobs.html" class="signup-button">Join Us</a>
+      <!-- <a href="#tour" class="tour-button">Take Tour</a> -->
     </div>
   </div>
    <footer>

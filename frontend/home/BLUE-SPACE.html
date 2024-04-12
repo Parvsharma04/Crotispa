@@ -74,7 +74,140 @@
            color: var(--light-gray);
            padding: 20px;
            text-align: center;
+        }
+
+.jobs{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.feature-container {
+ background-color: var(--light-gray);
+ padding: 0 0 2.5rem 0;
+ text-align: center;
        }
+       .feature-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+}
+
+.main-info {
+        display: flex;
+        flex-direction: column;
+}
+
+.main-title {
+        font-size: 4rem;
+        font-weight: bold;
+}
+
+.main-description {
+        color: var(--gray);
+        font-size: 1rem;
+}
+
+.feature-grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(111, 111, 122);
+        padding: 1.6rem;
+        border-radius: 0.5rem;
+        gap: 1rem;
+}
+
+.feature-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+}
+
+.icon-container {
+        background-color: var(--background-color);
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.feature-svg {
+        width: 1.5rem;
+        height: 1.5rem;
+}
+
+.feature-title {
+        color: white;
+        font-weight: bold;
+        font-size: 1.3rem;
+}
+
+.feature-description {
+        color: white;
+}
+
+.feature-card:nth-child(1) {
+        background-color: #4a90e2;
+}
+
+.feature-card:nth-child(2) {
+        background-color: #FF6289;
+}
+
+.feature-card:nth-child(3) {
+        background-color: #fcbf58;
+}
+
+.feature-card:nth-child(4) {
+        background-color: #44bfc3;
+}
+
+.feature-card:nth-child(5) {
+        background-color: #77b05d;
+}
+
+.feature-card:nth-child(6) {
+        background-color: #7d78b1;
+}
+
+@media screen and (max-width: 768px) {
+        .feature-grid {
+                grid-template-columns: repeat(1, 1fr);
+        }
+}
+.button-group {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        margin: 4rem auto 2rem auto;
+        align-items: center;
+        justify-content: center;
+}
+
+.signup-button {
+        border: none;
+        border-radius: 0.375rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        transform: all 0.1s;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+}
+
+.signup-button:hover {
+        background-color: #5254f8;
+}
    </style>
 </head>
 <body>
@@ -83,7 +216,7 @@
     <p>Expanding the knowledge of the universe with affordable space probes</p>
    </header>
    <nav>
-    <a href="#">Home</a>
+    <a href="../home.html">Home</a>
     <a href="#">Join Us</a>
     <a href="#">Technology</a>
     <a href="#">Contact</a>
@@ -95,6 +228,116 @@
         <p>Join us on this exciting journey by supporting our endeavors or becoming a part of our team. Together, we can unravel the secrets of the universe and make groundbreaking discoveries.</p>
        </section>
    </main>
+   <div class="feature-container" id="feature-container">
+    <div class="feature-content">
+      <div class="main-info">
+        <h2 class="main-title">Want To Work With Us?</h2>
+        <p class="main-description">
+            <h1>These are the roles you can sign up for...</h1>
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <!-- card 1 -->
+        <div class="feature-card">
+          <div class="icon-container">
+            <img
+              class="feature-svg"
+              src="./images/PersonalizedLearn.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-info">
+            <div class="feature-title">Project Manager</div>
+            <div class="feature-description">
+                A project manager is a professional who leads a team through the project life cycle by planning, budgeting, scheduling and tracking a project plan.
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="feature-card">
+          <div class="icon-container">
+            <img
+              class="feature-svg"
+              src="./images/Affordability.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-info">
+            <div class="feature-title">Web Developer</div>
+            <div class="feature-description">
+                The web developer is responsible for planning and developing software solutions and web applications, supporting and maintaining a company's websites and digital products.
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="feature-card">
+          <div class="icon-container">
+            <img
+              class="feature-svg"
+              src="./images/IndustryPatner.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-info">
+            <div class="feature-title">Blockchain Developer</div>
+            <div class="feature-description">
+                A blockchain developer is a software developer who focuses on blockchain technology. Developers program, develop, and test software and systems.
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="feature-card">
+          <div class="icon-container">
+            <img
+              class="feature-svg"
+              src="./images/InnovativeTech.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-info">
+            <div class="feature-title">Software Developer</div>
+            <div class="feature-description">
+                Software developers design, program, build, deploy and maintain software using many different skills and tools. They also help build software systems that power networks and devices and ensure that those systems remain functional.
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="feature-card">
+          <div class="icon-container">
+            <img
+              class="feature-svg"
+              src="./images/IndustryPatner.svg"
+              alt=""
+            />
+          </div>
+          <div class="feature-info">
+            <div class="feature-title">UI/UX Designer</div>
+            <div class="feature-description">
+                What is the job description of a UX UI designer?
+                The UI UX Designer gathers and evaluates user requirements in collaboration with Product Managers. They use their skills to illustrate design ideas using storyboards, process flows, or sitemaps.
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="feature-card">
+          <div class="icon-container">
+            <img class="feature-svg" src="./images/Analytics.svg" alt="" />
+          </div>
+          <div class="feature-info">
+            <div class="feature-title">Technical Support</div>
+            <div class="feature-description">
+                As a Technical Support (Tech Support) Worker, you will be tasked with monitoring and maintaining an organisation's computer systems and networks. You will be responsible for diagnosing any hardware or software faults with these systems and will solve the issues either in person or over the phone.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-group">
+      <a href="jobs.html" class="signup-button">Join Us</a>
+      <!-- <a href="#tour" class="tour-button">Take Tour</a> -->
+    </div>
+  </div>
    <footer>
        <p>&copy; 2023 BLUE SPACE. All rights reserved.</p>
    </footer>
