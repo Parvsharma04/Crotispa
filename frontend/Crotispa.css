@@ -518,6 +518,10 @@ body {
         width: 98%;
 }
 
+.signup-right .signup-button{
+        margin: 0 14rem;
+}
+
 @media screen and (min-width:640px) {
         .signup-left {
                 display: block;
