@@ -1,3 +1,4 @@
+// app.js
 const bodyParser = require('body-parser')
 const express = require('express')
 const {MongoClient} = require('mongodb')
@@ -46,6 +47,17 @@ app.post('/register', async(req, res)=>{
 app.get('/login', (_req, res)=>{
     res.sendFile('/login.html', {root: '../templates'})
 })
+
+// const count = await collection.countDocuments({
+//     username: req.body.username,
+//     password: req.body.password
+//   });
+  
+//   if (count > 0) {
+//     res.send('Logged in Successfully');
+//   } else {
+//     res.redirect('/register');
+//   }
 
 app.post('/login', async(req, res)=>{
     await client.connect()
